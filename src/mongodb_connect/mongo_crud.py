@@ -22,7 +22,7 @@ class mongo_operation:
         self.client_url=client_url
         self.database_name=database_name
         self.collection_name=collection_name
-
+    
     def create_mongo_client(self,collection=None):
         client=MongoClient(self.client_url)
         return client
@@ -68,4 +68,4 @@ class mongo_operation:
             
         datajson=json.loads(dataframe.to_json(orient='record'))
         collection=self.create_collection()
-        collection.insert_many(datajson)
+        collection.insert_many(datajson)    

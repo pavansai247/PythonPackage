@@ -1,6 +1,6 @@
 pymongo
 pymongo[srv]
-dnspaython
+dnspython
 pandas
 numpy
 ensure

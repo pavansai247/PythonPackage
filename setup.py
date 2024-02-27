@@ -1,19 +1,19 @@
 from setuptools import setup, find_packages
 from typing import List
 
-Hypen_E_Dot = '-e .'
+#Hypen_E_Dot = '-e .'
 
-def get_requiremet(file_path: str) -> List[str]:
-    '''
-    this function returns the requirements list
-    '''
+'''def get_requiremet(file_path: str) -> List[str]:
+    ''
+    # this function returns the requirements list
+    ''
     requirements = []
     with open(file_path) as file_obj:
         requirements = file_obj.readlines()
         requirements = [req.replace("\n", " ") for req in requirements]
         if Hypen_E_Dot in requirements:
             requirements.remove(Hypen_E_Dot)
-    return requirements
+    return requirements'''
 
 with open('README.md', 'r', encoding='utf-8') as f:
     long_description = f.read()     
@@ -39,6 +39,6 @@ setup(
     },
     package_dir={"": "src"},
     packages=find_packages(where="src"),
-    install_requires= get_requiremet("./requirements_dev.txt"),
+    #install_requires= get_requiremet("./requirements_dev.txt"),
     
     )
