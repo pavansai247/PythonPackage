@@ -4,7 +4,7 @@ import logging
 
 Project_name = "mongodb_connect"
 list_of_files = [
-    ".github/workflow/ci.yaml",
+    ".github/workflows/ci.yaml",
     "src/__init__.py",
     f"src/{Project_name}/__init__.py",
     f"src/{Project_name}/mongo_crud.py",
